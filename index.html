@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haz Click</title>
+  <style>
+    body {
+      background-color: #f4f4f4; /* Color de fondo */
+      font-family: 'Arial', sans-serif; /* Fuente del texto */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px; /* Bordes redondeados */
+      background-color: #acdb34; /* Color de fondo del botón */
+      color: #ffffff; /* Color del texto del botón */
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra 3D */
+    }
+
+    button:hover {
+      background-color: #36a12c; /* Color de fondo al pasar el ratón sobre el botón */
+      transform: translateY(-2px); /* Efecto de levantamiento 3D al pasar el ratón */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Botón para abrir en otra pestaña -->
+<button onclick="abrirEnOtraPestana()">Haz Click</button>
+
+<!-- Script con la función para abrir en otra pestaña -->
+<script>
+  function abrirEnOtraPestana() {
+    // Abre la página deseada en otra pestaña
+    window.open('https://www.youtube.com/watch?v=ikCa3Lr9pKU', '_blank');
+  }
+</script>
+
+</body>
+</html>
